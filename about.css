@@ -1,0 +1,105 @@
+/* General Styling */
+body, html {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background: linear-gradient(120deg, hwb(286 2% 74%), hwb(0 0% 97%));
+    color: #333;
+}
+
+header {
+    text-align: center;
+    padding: 2em 1em;
+    background: hsla(219, 86%, 72%, 0.158);
+    box-shadow: 0 4px 8px #f706e3d0;
+    
+}
+
+header h1 {
+    font-size: 2.5em;
+    margin: 0;
+    color: rgba(181, 243, 11, 0.959);
+}
+
+header p {
+    font-size: 1.2em;
+    color: hsl(76, 92%, 43%);
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    gap: 30px; /* Increased gap for more space between items */
+    margin: 0;
+}
+
+nav ul li {
+    display: flex;
+    align-items: center;
+}
+
+nav ul li i {
+    margin-right: 8px;
+    color: #ffcc00; /* Icon color */
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: hsl(73, 88%, 50%);
+    font-size: 2.0em; /* Slightly larger font size */
+    padding: 0.5em 1em; /* Added padding for more space around links */
+    transition: color 0.3s ease;
+}
+
+nav ul li a:hover {
+    color: hsl(14, 37%, 25%);
+}
+
+
+/* Section Styling */
+main {
+    max-width: 800px;
+    margin: 2em auto;
+    padding: 0 1em;
+}
+
+.about-item {
+    background: #ffffff;
+    margin: 1.5em 0;
+    padding: 1.5em;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+    opacity: 0; /* Initial state for fade-in */
+    transform: translateY(20px); /* Initial state for fade-in */
+    transition: transform 0.6s ease, opacity 0.6s ease;
+}
+
+.about-item h2 {
+    font-size: 1.8em;
+    margin: 0 0 0.5em;
+    color: hsl(13, 87%, 46%);
+}
+
+.about-item p {
+    font-size: 1em;
+    color: #555;
+    line-height: 1.6;
+}
+
+/* Animation Styling */
+.fade-in {
+    opacity: 1; /* Visible state */
+    transform: translateY(0); /* Visible state */
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    padding: 1em;
+    background: hsla(278, 98%, 54%, 0.8);
+    color: #333;
+    font-size: 0.9em;
+    box-shadow: 0 -4px 8px rgba(0, 0, 0, 0.1);
+}
